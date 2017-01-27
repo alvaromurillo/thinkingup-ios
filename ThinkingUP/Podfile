@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ThinkingUP' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ThinkingUP
+  pod 'Alamofire', '~> 4.3'
+  pod 'NVActivityIndicatorView', '~> 3.2'
+  pod 'IQKeyboardManagerSwift', '~> 4.0'
+  pod 'Fabric'
+  pod 'Crashlytics'
+
+  target 'ThinkingUPTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ThinkingUPUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

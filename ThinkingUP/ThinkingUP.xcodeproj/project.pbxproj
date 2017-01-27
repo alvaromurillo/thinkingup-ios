@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		123C1DC18158D0CFDBB3C121 /* Pods_ThinkingUPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3707E07DFD7C8E31F8C7AF /* Pods_ThinkingUPTests.framework */; };
+		726C020ABC267FC653A0E7D5 /* Pods_ThinkingUPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC9CC7219183F27FE16972 /* Pods_ThinkingUPUITests.framework */; };
+		C2815F171E350B8500144F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F161E350B8500144F4F /* AppDelegate.swift */; };
+		C2815F1C1E350B8500144F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2815F1A1E350B8500144F4F /* Main.storyboard */; };
+		C2815F1E1E350B8500144F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2815F1D1E350B8500144F4F /* Assets.xcassets */; };
+		C2815F211E350B8500144F4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2815F1F1E350B8500144F4F /* LaunchScreen.storyboard */; };
+		C2815F2C1E350B8500144F4F /* ThinkingUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F2B1E350B8500144F4F /* ThinkingUPTests.swift */; };
+		C2815F371E350B8500144F4F /* ThinkingUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F361E350B8500144F4F /* ThinkingUPUITests.swift */; };
+		C2815F4F1E350C0C00144F4F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F461E350C0C00144F4F /* ApiManager.swift */; };
+		C2815F511E350C0C00144F4F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F481E350C0C00144F4F /* Parser.swift */; };
+		C2815F521E350C0C00144F4F /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F4A1E350C0C00144F4F /* Idea.swift */; };
+		C2815F531E350C0C00144F4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F4B1E350C0C00144F4F /* User.swift */; };
+		C2815F541E350C0C00144F4F /* IdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815F4E1E350C0C00144F4F /* IdeasViewController.swift */; };
+		C2B5C7C31E35148900F78ECC /* OAuth2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5C7C21E35148900F78ECC /* OAuth2Handler.swift */; };
+		C2B5C7C51E351DFF00F78ECC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5C7C41E351DFF00F78ECC /* LoginViewController.swift */; };
+		C2B5C7C71E35395D00F78ECC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5C7C61E35395D00F78ECC /* Constants.swift */; };
+		C2B5C7C91E353C8600F78ECC /* NewIdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5C7C81E353C8600F78ECC /* NewIdeaViewController.swift */; };
+		E2BD14A9C8628D15AF169C41 /* Pods_ThinkingUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87958F9EDEC67627E84FFD20 /* Pods_ThinkingUP.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2815F281E350B8500144F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2815F0B1E350B8500144F4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2815F121E350B8500144F4F;
+			remoteInfo = ThinkingUP;
+		};
+		C2815F331E350B8500144F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2815F0B1E350B8500144F4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2815F121E350B8500144F4F;
+			remoteInfo = ThinkingUP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D467C3C86FB2F71DA316249 /* Pods-ThinkingUPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkingUPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkingUPTests/Pods-ThinkingUPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		150ED5E7CEFD1AD930E939BD /* Pods-ThinkingUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkingUP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkingUP/Pods-ThinkingUP.debug.xcconfig"; sourceTree = "<group>"; };
+		165E9C3381106E768DD3AA1A /* Pods-ThinkingUPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkingUPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkingUPTests/Pods-ThinkingUPTests.release.xcconfig"; sourceTree = "<group>"; };
+		21F5D8A1C9C3C826FD044458 /* Pods-ThinkingUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkingUP.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkingUP/Pods-ThinkingUP.release.xcconfig"; sourceTree = "<group>"; };
+		4FAC9CC7219183F27FE16972 /* Pods_ThinkingUPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkingUPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8700845811CBCF1FDF801F0A /* Pods-ThinkingUPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkingUPUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkingUPUITests/Pods-ThinkingUPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87958F9EDEC67627E84FFD20 /* Pods_ThinkingUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkingUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BD45CABE6003344204CC3E /* Pods-ThinkingUPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkingUPUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkingUPUITests/Pods-ThinkingUPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2815F131E350B8500144F4F /* ThinkingUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkingUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2815F161E350B8500144F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2815F1B1E350B8500144F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2815F1D1E350B8500144F4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2815F201E350B8500144F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2815F221E350B8500144F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2815F271E350B8500144F4F /* ThinkingUPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkingUPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2815F2B1E350B8500144F4F /* ThinkingUPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkingUPTests.swift; sourceTree = "<group>"; };
+		C2815F2D1E350B8500144F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2815F321E350B8500144F4F /* ThinkingUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkingUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2815F361E350B8500144F4F /* ThinkingUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkingUPUITests.swift; sourceTree = "<group>"; };
+		C2815F381E350B8500144F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2815F461E350C0C00144F4F /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C2815F481E350C0C00144F4F /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C2815F4A1E350C0C00144F4F /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
+		C2815F4B1E350C0C00144F4F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C2815F4E1E350C0C00144F4F /* IdeasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeasViewController.swift; sourceTree = "<group>"; };
+		C2B5C7C21E35148900F78ECC /* OAuth2Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Handler.swift; sourceTree = "<group>"; };
+		C2B5C7C41E351DFF00F78ECC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C2B5C7C61E35395D00F78ECC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C2B5C7C81E353C8600F78ECC /* NewIdeaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewIdeaViewController.swift; sourceTree = "<group>"; };
+		DB3707E07DFD7C8E31F8C7AF /* Pods_ThinkingUPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkingUPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2815F101E350B8500144F4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BD14A9C8628D15AF169C41 /* Pods_ThinkingUP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2815F241E350B8500144F4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123C1DC18158D0CFDBB3C121 /* Pods_ThinkingUPTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2815F2F1E350B8500144F4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726C020ABC267FC653A0E7D5 /* Pods_ThinkingUPUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90432229D410199F624F1DFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87958F9EDEC67627E84FFD20 /* Pods_ThinkingUP.framework */,
+				DB3707E07DFD7C8E31F8C7AF /* Pods_ThinkingUPTests.framework */,
+				4FAC9CC7219183F27FE16972 /* Pods_ThinkingUPUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2815F0A1E350B8500144F4F = {
+			isa = PBXGroup;
+			children = (
+				C2815F151E350B8500144F4F /* ThinkingUP */,
+				C2815F2A1E350B8500144F4F /* ThinkingUPTests */,
+				C2815F351E350B8500144F4F /* ThinkingUPUITests */,
+				C2815F141E350B8500144F4F /* Products */,
+				E9A35F33A8B2040D42C99B64 /* Pods */,
+				90432229D410199F624F1DFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C2815F141E350B8500144F4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2815F131E350B8500144F4F /* ThinkingUP.app */,
+				C2815F271E350B8500144F4F /* ThinkingUPTests.xctest */,
+				C2815F321E350B8500144F4F /* ThinkingUPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2815F151E350B8500144F4F /* ThinkingUP */ = {
+			isa = PBXGroup;
+			children = (
+				C2815F441E350C0C00144F4F /* Custom Views */,
+				C2815F451E350C0C00144F4F /* Data Source */,
+				C2815F491E350C0C00144F4F /* Model */,
+				C2815F4D1E350C0C00144F4F /* View Controllers */,
+				C2815F161E350B8500144F4F /* AppDelegate.swift */,
+				C2815F1A1E350B8500144F4F /* Main.storyboard */,
+				C2815F1D1E350B8500144F4F /* Assets.xcassets */,
+				C2815F1F1E350B8500144F4F /* LaunchScreen.storyboard */,
+				C2815F221E350B8500144F4F /* Info.plist */,
+				C2B5C7C61E35395D00F78ECC /* Constants.swift */,
+			);
+			path = ThinkingUP;
+			sourceTree = "<group>";
+		};
+		C2815F2A1E350B8500144F4F /* ThinkingUPTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2815F2B1E350B8500144F4F /* ThinkingUPTests.swift */,
+				C2815F2D1E350B8500144F4F /* Info.plist */,
+			);
+			path = ThinkingUPTests;
+			sourceTree = "<group>";
+		};
+		C2815F351E350B8500144F4F /* ThinkingUPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2815F361E350B8500144F4F /* ThinkingUPUITests.swift */,
+				C2815F381E350B8500144F4F /* Info.plist */,
+			);
+			path = ThinkingUPUITests;
+			sourceTree = "<group>";
+		};
+		C2815F441E350C0C00144F4F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		C2815F451E350C0C00144F4F /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				C2815F461E350C0C00144F4F /* ApiManager.swift */,
+				C2815F481E350C0C00144F4F /* Parser.swift */,
+				C2B5C7C21E35148900F78ECC /* OAuth2Handler.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		C2815F491E350C0C00144F4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2815F4A1E350C0C00144F4F /* Idea.swift */,
+				C2815F4B1E350C0C00144F4F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2815F4D1E350C0C00144F4F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2815F4E1E350C0C00144F4F /* IdeasViewController.swift */,
+				C2B5C7C41E351DFF00F78ECC /* LoginViewController.swift */,
+				C2B5C7C81E353C8600F78ECC /* NewIdeaViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E9A35F33A8B2040D42C99B64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				150ED5E7CEFD1AD930E939BD /* Pods-ThinkingUP.debug.xcconfig */,
+				21F5D8A1C9C3C826FD044458 /* Pods-ThinkingUP.release.xcconfig */,
+				0D467C3C86FB2F71DA316249 /* Pods-ThinkingUPTests.debug.xcconfig */,
+				165E9C3381106E768DD3AA1A /* Pods-ThinkingUPTests.release.xcconfig */,
+				92BD45CABE6003344204CC3E /* Pods-ThinkingUPUITests.debug.xcconfig */,
+				8700845811CBCF1FDF801F0A /* Pods-ThinkingUPUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2815F121E350B8500144F4F /* ThinkingUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2815F3B1E350B8500144F4F /* Build configuration list for PBXNativeTarget "ThinkingUP" */;
+			buildPhases = (
+				AB4C27457899E12B8CF405F4 /* [CP] Check Pods Manifest.lock */,
+				C2815F0F1E350B8500144F4F /* Sources */,
+				C2815F101E350B8500144F4F /* Frameworks */,
+				C2815F111E350B8500144F4F /* Resources */,
+				70FD37CD082837ED5AD48E8D /* [CP] Embed Pods Frameworks */,
+				A319AD93EF62B195BC832F05 /* [CP] Copy Pods Resources */,
+				C24500001E354C3700B92DE0 /* Fabric */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThinkingUP;
+			productName = ThinkingUP;
+			productReference = C2815F131E350B8500144F4F /* ThinkingUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2815F261E350B8500144F4F /* ThinkingUPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2815F3E1E350B8500144F4F /* Build configuration list for PBXNativeTarget "ThinkingUPTests" */;
+			buildPhases = (
+				3EBE643AA9E2044A361E41DB /* [CP] Check Pods Manifest.lock */,
+				C2815F231E350B8500144F4F /* Sources */,
+				C2815F241E350B8500144F4F /* Frameworks */,
+				C2815F251E350B8500144F4F /* Resources */,
+				157FB157B6F1130A4A503F16 /* [CP] Embed Pods Frameworks */,
+				A757E3112448270D70EAF471 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2815F291E350B8500144F4F /* PBXTargetDependency */,
+			);
+			name = ThinkingUPTests;
+			productName = ThinkingUPTests;
+			productReference = C2815F271E350B8500144F4F /* ThinkingUPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2815F311E350B8500144F4F /* ThinkingUPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2815F411E350B8500144F4F /* Build configuration list for PBXNativeTarget "ThinkingUPUITests" */;
+			buildPhases = (
+				F8078DF192024B15F251588E /* [CP] Check Pods Manifest.lock */,
+				C2815F2E1E350B8500144F4F /* Sources */,
+				C2815F2F1E350B8500144F4F /* Frameworks */,
+				C2815F301E350B8500144F4F /* Resources */,
+				C0532B98256DEA141E478E63 /* [CP] Embed Pods Frameworks */,
+				873813D7658692A3CEE88331 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2815F341E350B8500144F4F /* PBXTargetDependency */,
+			);
+			name = ThinkingUPUITests;
+			productName = ThinkingUPUITests;
+			productReference = C2815F321E350B8500144F4F /* ThinkingUPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2815F0B1E350B8500144F4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "NSCoder Sevilla";
+				TargetAttributes = {
+					C2815F121E350B8500144F4F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 78R7RLKRQD;
+						ProvisioningStyle = Automatic;
+					};
+					C2815F261E350B8500144F4F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 78R7RLKRQD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2815F121E350B8500144F4F;
+					};
+					C2815F311E350B8500144F4F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 78R7RLKRQD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2815F121E350B8500144F4F;
+					};
+				};
+			};
+			buildConfigurationList = C2815F0E1E350B8500144F4F /* Build configuration list for PBXProject "ThinkingUP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2815F0A1E350B8500144F4F;
+			productRefGroup = C2815F141E350B8500144F4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2815F121E350B8500144F4F /* ThinkingUP */,
+				C2815F261E350B8500144F4F /* ThinkingUPTests */,
+				C2815F311E350B8500144F4F /* ThinkingUPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2815F111E350B8500144F4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2815F211E350B8500144F4F /* LaunchScreen.storyboard in Resources */,
+				C2815F1E1E350B8500144F4F /* Assets.xcassets in Resources */,
+				C2815F1C1E350B8500144F4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2815F251E350B8500144F4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2815F301E350B8500144F4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		157FB157B6F1130A4A503F16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkingUPTests/Pods-ThinkingUPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBE643AA9E2044A361E41DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70FD37CD082837ED5AD48E8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkingUP/Pods-ThinkingUP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873813D7658692A3CEE88331 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkingUPUITests/Pods-ThinkingUPUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A319AD93EF62B195BC832F05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkingUP/Pods-ThinkingUP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A757E3112448270D70EAF471 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkingUPTests/Pods-ThinkingUPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB4C27457899E12B8CF405F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0532B98256DEA141E478E63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkingUPUITests/Pods-ThinkingUPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C24500001E354C3700B92DE0 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1c1ff3252e22f443ef83c55795dbd9c2767ff5f7 927099a52b63b599d5943aa05c9f0c5c3d77bdab646a56400f8c4040058020c5";
+		};
+		F8078DF192024B15F251588E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2815F0F1E350B8500144F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B5C7C51E351DFF00F78ECC /* LoginViewController.swift in Sources */,
+				C2815F511E350C0C00144F4F /* Parser.swift in Sources */,
+				C2B5C7C91E353C8600F78ECC /* NewIdeaViewController.swift in Sources */,
+				C2815F531E350C0C00144F4F /* User.swift in Sources */,
+				C2815F521E350C0C00144F4F /* Idea.swift in Sources */,
+				C2815F541E350C0C00144F4F /* IdeasViewController.swift in Sources */,
+				C2815F4F1E350C0C00144F4F /* ApiManager.swift in Sources */,
+				C2815F171E350B8500144F4F /* AppDelegate.swift in Sources */,
+				C2B5C7C31E35148900F78ECC /* OAuth2Handler.swift in Sources */,
+				C2B5C7C71E35395D00F78ECC /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2815F231E350B8500144F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2815F2C1E350B8500144F4F /* ThinkingUPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2815F2E1E350B8500144F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2815F371E350B8500144F4F /* ThinkingUPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2815F291E350B8500144F4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2815F121E350B8500144F4F /* ThinkingUP */;
+			targetProxy = C2815F281E350B8500144F4F /* PBXContainerItemProxy */;
+		};
+		C2815F341E350B8500144F4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2815F121E350B8500144F4F /* ThinkingUP */;
+			targetProxy = C2815F331E350B8500144F4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2815F1A1E350B8500144F4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2815F1B1E350B8500144F4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2815F1F1E350B8500144F4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2815F201E350B8500144F4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2815F391E350B8500144F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2815F3A1E350B8500144F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2815F3C1E350B8500144F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150ED5E7CEFD1AD930E939BD /* Pods-ThinkingUP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78R7RLKRQD;
+				INFOPLIST_FILE = ThinkingUP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nscoder.sevilla.ThinkingUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C2815F3D1E350B8500144F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F5D8A1C9C3C826FD044458 /* Pods-ThinkingUP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78R7RLKRQD;
+				INFOPLIST_FILE = ThinkingUP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nscoder.sevilla.ThinkingUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C2815F3F1E350B8500144F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D467C3C86FB2F71DA316249 /* Pods-ThinkingUPTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78R7RLKRQD;
+				INFOPLIST_FILE = ThinkingUPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nscoder.sevilla.ThinkingUPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkingUP.app/ThinkingUP";
+			};
+			name = Debug;
+		};
+		C2815F401E350B8500144F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 165E9C3381106E768DD3AA1A /* Pods-ThinkingUPTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78R7RLKRQD;
+				INFOPLIST_FILE = ThinkingUPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nscoder.sevilla.ThinkingUPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkingUP.app/ThinkingUP";
+			};
+			name = Release;
+		};
+		C2815F421E350B8500144F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BD45CABE6003344204CC3E /* Pods-ThinkingUPUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = 78R7RLKRQD;
+				INFOPLIST_FILE = ThinkingUPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nscoder.sevilla.ThinkingUPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ThinkingUP;
+			};
+			name = Debug;
+		};
+		C2815F431E350B8500144F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8700845811CBCF1FDF801F0A /* Pods-ThinkingUPUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = 78R7RLKRQD;
+				INFOPLIST_FILE = ThinkingUPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nscoder.sevilla.ThinkingUPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ThinkingUP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2815F0E1E350B8500144F4F /* Build configuration list for PBXProject "ThinkingUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2815F391E350B8500144F4F /* Debug */,
+				C2815F3A1E350B8500144F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2815F3B1E350B8500144F4F /* Build configuration list for PBXNativeTarget "ThinkingUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2815F3C1E350B8500144F4F /* Debug */,
+				C2815F3D1E350B8500144F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2815F3E1E350B8500144F4F /* Build configuration list for PBXNativeTarget "ThinkingUPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2815F3F1E350B8500144F4F /* Debug */,
+				C2815F401E350B8500144F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2815F411E350B8500144F4F /* Build configuration list for PBXNativeTarget "ThinkingUPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2815F421E350B8500144F4F /* Debug */,
+				C2815F431E350B8500144F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2815F0B1E350B8500144F4F /* Project object */;
+}

@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
+  - IQKeyboardManagerSwift (4.0.8)
+  - NVActivityIndicatorView (3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3)
+  - Crashlytics
+  - Fabric
+  - IQKeyboardManagerSwift (~> 4.0)
+  - NVActivityIndicatorView (~> 3.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  NVActivityIndicatorView: 28942c18ced111a6a3ce5e6f5b27d9d40116d639
+
+PODFILE CHECKSUM: 0479093fb29e9b97be7229d3dd5921f6af9534e6
+
+COCOAPODS: 1.1.1

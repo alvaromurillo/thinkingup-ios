@@ -1,0 +1,6 @@
+framework module Pods_ThinkingUPUITests {
+  umbrella header "Pods-ThinkingUPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
